@@ -1,0 +1,14 @@
+tablero: list = []
+for fila in range(8):
+    fila_vacia: list = ["."]*8 # 8 casillas vacías
+    tablero.append(fila_vacia)
+
+tablero[7][4] = "\u2654" # colocar el rey blanco en la posición (7,4)
+tablero[0][4] = "\u265A" # colocar el rey negro en la posición (0,4)
+
+
+print(tablero[0][4], tablero[7][4])
+for fila in tablero:
+    for columna in fila:
+        print (columna, end=" ")
+    print ("")
